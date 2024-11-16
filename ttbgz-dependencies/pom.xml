@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ttbgz</groupId>
+        <artifactId>ttbgz-spring-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <artifactId>ttbgz-dependencies</artifactId>
+    <packaging>pom</packaging>
+    <name>ttbgz-dependencies</name>
+    <description>ttbgz BOM</description>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 阿里云隐私服务 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-aliyun-dyplsapi-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+            <!-- 阿里云短信服务 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-aliyun-sms-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+            <!-- 阿里云OSS服务 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-aliyun-oss-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+
+            <!-- websocket 服务 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-websocket-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+            <!-- common 组件 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-common-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+
+            <!-- common 组件 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-mybatis-plus-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+
+            <!-- redisson 组件 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-redisson-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+            <!-- 华为云短信 组件 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-huaweicloud-sms-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+            <!-- 华为云ivs 认证 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-huaweicloud-ivs-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+
+            <!-- 微信 -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-wechat-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+
+            <!-- xxl-job -->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-xxl-job-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+
+            <!-- rocketmq-->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-rocketmq-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+            <!-- 汇付支付-->
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-huifu-spring-boot-starter</artifactId>
+                <version>${ttbgz.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

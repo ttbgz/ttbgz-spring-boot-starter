@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ttbgz</groupId>
+        <artifactId>ttbgz-spring-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <artifactId>ttbgz-redisson-spring-boot-starter</artifactId>
+    <name>ttbgz-redisson-spring-boot-starter</name>
+
+    <description>redisson组件</description>
+
+    <dependencies>
+
+        <!-- redisson -->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

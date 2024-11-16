@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ttbgz</groupId>
+        <artifactId>ttbgz-spring-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <artifactId>ttbgz-huaweicloud-spring-boot-starter</artifactId>
+    <name>ttbgz-huaweicloud-spring-boot-starter</name>
+
+    <description>华为产品集成</description>
+
+    <packaging>pom</packaging>
+
+   <properties>
+       <huaweicloud-config.version>3.0.0</huaweicloud-config.version>
+       <apigateway.version>3.2.5</apigateway.version>
+       <ivs.version>3.1.104</ivs.version>
+
+   </properties>
+
+    <modules>
+        <module>ttbgz-huaweicloud-config</module>
+        <module>ttbgz-huaweicloud-sms-spring-boot-starter</module>
+        <module>ttbgz-huaweicloud-ivs-spring-boot-starter</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 华为云 发送短信 -->
+            <dependency>
+                <groupId>com.huawei.apigateway</groupId>
+                <artifactId>java-sdk-core</artifactId>
+                <version>${apigateway.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-huaweicloud-config</artifactId>
+                <version>${huaweicloud-config.version}</version>
+            </dependency>
+            <!-- ivs -->
+            <dependency>
+                <groupId>com.huaweicloud.sdk</groupId>
+                <artifactId>huaweicloud-sdk-ivs</artifactId>
+                <version>${ivs.version}</version>
+            </dependency>
+            <!-- core -->
+            <dependency>
+                <groupId>com.huaweicloud.sdk</groupId>
+                <artifactId>huaweicloud-sdk-core</artifactId>
+                <version>${ivs.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

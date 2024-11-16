@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ttbgz</groupId>
+        <artifactId>ttbgz-spring-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <artifactId>ttbgz-wechat-spring-boot-starter</artifactId>
+    <name>ttbgz-wechat-spring-boot-starter</name>
+
+    <description>微信产品集成</description>
+
+    <packaging>pom</packaging>
+
+   <properties>
+       <wechat-config.version>3.0.0</wechat-config.version>
+       <wechat.version>4.6.0</wechat.version>
+   </properties>
+
+    <modules>
+        <module>ttbgz-wechat-config</module>
+        <module>ttbgz-wechat-login-spring-boot-starter</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-wechat-config</artifactId>
+                <version>${wechat-config.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

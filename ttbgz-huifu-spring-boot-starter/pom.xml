@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ttbgz</groupId>
+        <artifactId>ttbgz-spring-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <artifactId>ttbgz-huifu-spring-boot-starter</artifactId>
+    <name>ttbgz-huifu-spring-boot-starter</name>
+
+    <description>汇付支付产品集成</description>
+
+    <packaging>jar</packaging>
+
+   <dependencies>
+
+       <dependency>
+           <groupId>com.huifu.bspay.sdk</groupId>
+           <artifactId>dg-java-sdk</artifactId>
+           <version>3.0.18</version>
+       </dependency>
+       <!-- 自定义验证注解 -->
+       <dependency>
+           <groupId>org.springframework.boot</groupId>
+           <artifactId>spring-boot-starter-validation</artifactId>
+       </dependency>
+   </dependencies>
+</project>

@@ -1,0 +1,3 @@
+com.ttbgz.huifu.config.HuiFuConfig
+com.ttbgz.huifu.service.impl.UserBasicDataInDvServiceImpl
+com.ttbgz.huifu.service.impl.UserPayServiceImpl

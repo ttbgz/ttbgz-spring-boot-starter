@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.ttbgz</groupId>
+        <artifactId>ttbgz-spring-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </parent>
+
+    <artifactId>ttbgz-leshua-spring-boot-starter</artifactId>
+    <name>ttbgz-leshua-spring-boot-starter</name>
+
+    <description>乐刷支付产品集成</description>
+
+    <packaging>pom</packaging>
+
+   <properties>
+       <leshua-config.version>3.0.0</leshua-config.version>
+       <leshua.version>4.6.0</leshua.version>
+   </properties>
+
+    <modules>
+        <module>ttbgz-leshua-config</module>
+        <module>ttbgz-leshua-sdk</module>
+        <module>ttbgz-leshua-pay-spring-boot-starter</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>com.ttbgz</groupId>
+                <artifactId>ttbgz-leshua-config</artifactId>
+                <version>${leshua-config.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
